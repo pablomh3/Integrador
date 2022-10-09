@@ -461,16 +461,16 @@ font-weight: 600;
   display: flex;
   justify-content: center;
   align-content: center;
-  gap: 80px;
+  gap: 60px;
   flex-direction: column;
 }
 .container-registro{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: var(--azul);
   border-radius: 2%;
-  padding: 50px;
+  padding: 80px 50px;
   gap: 50px;
 }
 .registro-izq{
