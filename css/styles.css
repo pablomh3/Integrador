@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -22,11 +22,10 @@
 body{
     display: flex;
     flex-direction: column;
-    gap: 120px;
     background-color:var(--negro);
     font-family: 'Noto Sans', sans-serif;
     color: var(--azul);
-    }
+  }
 header {
     width: 100%;
     display: flex;
@@ -38,7 +37,8 @@ header {
     position: fixed;
     top: 0;
     overflow: hidden;
-    background-color: var(--negro)
+    background-color: var(--negro);
+    z-index: 1;
 }
 .logo {
     width: 200px;
@@ -89,7 +89,7 @@ header {
   main{
     display: flex;
     flex-direction: column;
-    padding: 200px 120px;
+    padding: 200px 100px 100px;
     gap: 120px;
   }
   #hero{
@@ -99,8 +99,8 @@ header {
     align-items:center;
     background-color: var(--gris);
     border-radius: 2%;
-    padding: 40px 50px;
-    gap: 10px;
+    padding: 50px;
+    gap: 30px;
 }
 
 .hero-container-izq {
@@ -110,7 +110,7 @@ header {
   align-items: center;
   gap: 50px;
   text-align:center;
-  width: 1200px;
+  width: 900px;
 }
 .hero-h1 {
   font-family: 'Press Start 2P', cursive;
@@ -125,6 +125,8 @@ header {
 .hero-h3 {
   padding: 0 20px;
  font-size: 15px; 
+ line-height : 25px;
+
 }
 span {
   background: linear-gradient(to left, #4c96d7, #8a25b1);
@@ -140,28 +142,22 @@ span:hover {
 .hero-container-der{
   display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 880px;
+  overflow: none;
 }
-.hero-img img{
-  height: 460px;
+.hero-img{
+ width: 612px;
 }
-
 #beneficios {
   display: flex;
   justify-content: center;
   align-content: center;
-  align-items:center;
-  background-color: var(--gris);
-  border-radius: 2%;
-  padding: 50px 60px;
-  gap: 50px;
+  align-items: center;
+  gap: 40px;
   flex-direction: column;
 }
 .beneficios-h2{
   font-family: 'Press Start 2P', cursive;
-  text-align: center;
   font-size: 18px;
   font-weight: 800;
   background: linear-gradient(to left, var(--magenta), var(--cyan));
@@ -172,37 +168,45 @@ span:hover {
 
 .beneficios-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 1500px;
-  gap: 50px;
+  background-color: var(--gris);
+  border-radius: 2%;
+  padding: 50px;
+  gap: 30px;
 }
 .beneficios-izq {
   display: flex;
-  justify-content: center;
-  width: 1000px;
+ align-items: center;
+justify-content: center;
+}
+.beneficios-img{
+  width: 612px;
 }
 .beneficios-der{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 50%;
   align-items: center;
   gap: 50px;
   text-align:center;
-  width: 1200px;
-  flex-wrap: wrap;
 }
 .beneficios-h3{
- font-size: 15px;
+ font-size: 14px;
+ line-height : 25px;
 }
 h3 img{
   height: 24px;
+}
+h2 img{
+  height: 30px;
 }
 .beneficios-boton{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 40px;
+  font-family: 'Geostar Fill', cursive;
 }
 .boton1{
   background-color: var(--magenta);
@@ -210,7 +214,7 @@ h3 img{
   padding: 15px;
   border-radius: 10%;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   transition: all 0.3s;
 }
 .boton2{
@@ -219,7 +223,7 @@ h3 img{
   padding: 15px;
   border-radius: 10%;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   transition: all 0.3s;
 }
 .boton1:hover{
@@ -229,4 +233,223 @@ h3 img{
 .boton2:hover{
   background-color: var(--azul);
   color: var(--cyan);
+}
+#productos{
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+  gap: 50px;
+}
+.productos-cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 65px;
+  overflow: hidden;
+}
+.productos-h2{
+  display: flex;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 18px;
+  font-weight: 800;
+  background: linear-gradient(to left, var(--magenta), var(--cyan));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  width: 21%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: var(--blanco);
+  border-radius: 2%;
+  padding: 20px;
+  gap: 5px;
+  
+}
+.card:hover{
+  transform: scale(1.01);
+  transition: all 0.3s;
+  border-radius: 3%;
+}
+.card img{
+  height: 250px;
+  width: 250px;
+}
+.card-h3{
+  color: var(--negro);
+  text-align: center;
+}
+.card-precio-tachado{
+  text-decoration: line-through;
+  color: var(--negro);
+}
+.card-descuento a{
+  font-size: 20px;
+  font-family: 'Geostar Fill', cursive;
+  font-weight: 800;
+  background: linear-gradient(to left, var(--magenta), var(--cyan));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.cards-vertodo{
+display: flex;
+justify-content: flex-end;
+}
+.cards-vertodo a{
+  font-size: 25px;
+  font-family: 'Noto Sans Mono', monospace;
+font-weight: 800;
+background: linear-gradient(to left, var(--magenta), var(--cyan));
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+
+transition: all 0.5s;
+}
+.cards-vertodo a:hover{
+  color: var(--blanco);
+}
+#contacto{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+  gap: 30px;
+}
+.contacto-h2{
+  display: flex;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 18px;
+  font-weight: 800;
+  background: linear-gradient(to left, var(--magenta), var(--cyan));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.contacto-container{
+  display: flex;
+ justify-content: space-evenly;
+  background-color: var(--gris);
+  border-radius: 2%;
+  padding: 50px;
+  gap: 80px;
+}
+.contacto-izq{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.contacto-der{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+ align-items: center;
+}
+.contacto-h3{
+  display: flex;
+  font-size: 20px;
+}
+.contacto-h3 h3{
+  text-align: center;
+  font-family: 'Noto Sans Mono', monospace;
+}
+.contacto-forms{
+  display: flex;
+  gap: 20px;
+ flex-direction: column;
+ font-weight: 700;
+}
+.contacto-forms input{
+ padding: 5px;
+ border: 2px solid var(--azul);
+
+}
+.contacto-forms input:hover{
+  border: 2px solid var(--cyan);
+ }
+#mensaje{
+  height: 120px;
+}
+.forms-mensaje{
+  display: flex;
+  gap: 9px;
+}
+.contacto-boton{
+  display: flex;
+  background: linear-gradient(to left, #4c96d7, #8a25b1);
+  font-family: 'Geostar Fill', cursive;
+  transition: all 0.3s;
+  width: 140px;
+  padding: 12px;
+  border-radius: 10%;
+  font-weight: 700;
+  font-size: 20px;
+  
+  align-self:center;
+  justify-content: center;
+}
+.contacto-boton a{
+  color: var(--azul);
+  transition: all 0.3s;
+}
+.contacto-boton a:hover{
+  color: var(--blanco);
+}
+.iframe{
+  display: flex;
+  
+}
+.contacto-datos{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+.contacto-datos a{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--azul);
+}
+
+#footer{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-top: 1px solid var(--magenta);
+  padding: 20px 0 0;
+  align-items: center;
+}
+.logo-footer{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logo-footer img{
+  height: 80px;
+}
+.logo-footer-p{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-weight: 800;
+  background: linear-gradient(to left, var(--magenta), var(--cyan));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Geostar Fill', cursive;
+  font-size: 30px;
+}
+.footer-p{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: var(--blanco);
 }
