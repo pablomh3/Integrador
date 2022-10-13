@@ -7,11 +7,14 @@
     <title> Home | Game Over</title>
     <link rel="icon" type="img/png" href="img/logo.png">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
 </head>
 <body>
     <header>
+      <div class="logo-img">
         <img src="img/logo-nombre1.png" alt="logo" class="logo">
-        <nav id="navbar">
+      </div>
+      <nav id="navbar">  
             <ul class="navbar-list">
                 <li>
                   <a href="#">Home</a>
@@ -25,8 +28,15 @@
                 <li>
                   <a href="#contacto">Contacto</a>
                 </li>
-                <img src="./img/shopping-cart.svg" alt="Carrito de compras" class="cart-icon"/>
               </ul>
+              <div class="nav-img">
+                <img src="./img/shopping-cart.svg" alt="Carrito de compras" class="cart-icon"/>
+                  <label for="menu" class="menu">
+                    <img src="img/align-justify.svg" alt="menu">
+                  </label>
+                  <input type="checkbox" id="menu">
+              </div>
+              
         </nav>
     </header>
     <main>
