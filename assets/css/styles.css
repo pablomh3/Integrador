@@ -171,6 +171,7 @@ span:hover {
   align-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 50px;
 }
 .beneficios-h2{
   font-family: 'Press Start 2P', cursive;
@@ -183,9 +184,10 @@ span:hover {
 }
 
 .beneficios-container {
+  background-color: var(--gris);
   display: flex;
   align-items: center;
-  color: var(--blanco);
+  color: var(--azul);
   border-radius: 2%;
   padding: 35px 50px;
   gap: 30px;

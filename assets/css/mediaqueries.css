@@ -100,6 +100,8 @@
         flex-direction: column;
         width: 100%;
         padding: 0px 30px;
+        background-color: transparent;
+        color: var(--blanco);
     }
     .beneficios-der,
     .beneficios-izq{
@@ -215,9 +217,14 @@
     .beneficios-h3{
         display: none;
     }
-    .boton1, 
+    .boton1{
+    padding: 23px 10px;
+    border-radius: 5%;
+    font-weight: 700;
+    font-size: 15px;
+    } 
     .boton2{
-    padding: 15px;
+    padding: 15px 10px;
     border-radius: 5%;
     font-weight: 700;
     font-size: 15px;
